@@ -1,0 +1,82 @@
+# ============================================
+# PyTorch ecosystem (CUDA 11.8 compatible)
+# ============================================
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch
+torchvision
+torchaudio
+
+# ============================================
+# PyTorch Lightning (3.12-compatible)
+# ============================================
+pytorch-lightning
+
+# ============================================
+# Transformers and NLP
+# ============================================
+transformers
+tokenizer
+
+# ============================================
+# Computer Vision
+# ============================================
+opencv-python-headless
+pillow
+
+# ============================================
+# Scientific Computing
+# ============================================
+numpy
+scipy
+scikit-learn
+
+# ============================================
+# Configuration Management
+# ============================================
+hydra-core
+omegaconf
+
+# ============================================
+# Data Processing and Visualization
+# ============================================
+
+pandas
+matplotlib
+seaborn
+evaluate
+fairscale
+cog
+pycocoevalcap
+
+# ============================================
+# Testing
+# ============================================
+pytest
+pytest-cov
+
+# ============================================
+# Development Tools
+# ============================================
+jupyter
+ipython
+
+# ============================================
+# System Utilities
+# ============================================
+tqdm
+pyyaml
+
+# ============================================
+# Additional Packages
+# ============================================
+tensorboard
+grad-cam
+timm
+albumentations
+ftfy
+regex
+
+# ============================================
+# Optional (for logging & tracking)
+# ============================================
+wandb
