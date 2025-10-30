@@ -1,0 +1,45 @@
+image_root: '/pscratch/sd/m/megha89/ddl-project/data/images/'
+
+train_image_dir: '/pscratch/sd/m/megha89/ddl-project/data/train2014'
+val_image_dir: '/pscratch/sd/m/megha89/ddl-project/data/val2014'
+ann_root: '/pscratch/sd/m/megha89/ddl-project/data/annotations'
+#coco_gt_root: '/Users/agraw1/Desktop/Fall2025/deep-distributed-learning/project/code/data/annotations'
+
+train_subset_img_dir: '/pscratch/sd/m/megha89/ddl-project/data/subsets/train_images_10000'
+valid_subset_img_dir: '/pscratch/sd/m/megha89/ddl-project/data/subsets/val_images_10000'
+train_subset_ann_file: '/pscratch/sd/m/megha89/ddl-project/data/subsets/train_subset_10000.json'
+val_subset_ann_file: '/pscratch/sd/m/megha89/ddl-project/data/subsets/val_subset_10000.json'
+
+#ann_root: 'annotation'
+#coco_gt_root: 'annotation/coco_gt'
+
+# set pretrained as a file path or an url
+pretrained: '/pscratch/sd/m/megha89/ddl-project/code/checkpoints/model_base_capfilt_large.pth'
+#pretrained: '/pscratch/sd/m/megha89/ddl-project/code/checkpoints/model_base_14M.pth'
+# size of vit model; base or large
+vit: 'base'
+vit_grad_ckpt: True #False
+vit_ckpt_layer: 0
+batch_size: 32
+init_lr: 1.0e-5
+
+# vit: 'large'
+# vit_grad_ckpt: True
+# vit_ckpt_layer: 5
+# batch_size: 16
+# init_lr: 2e-6
+
+image_size: 224
+#image_size: 384
+subset_size: 1000
+# generation configs
+max_length: 20  
+min_length: 5
+num_beams: 1 #3
+prompt: 'a picture of '
+
+# optimizer
+weight_decay: 0.05
+min_lr: 0
+max_epoch: 2 #5
+
